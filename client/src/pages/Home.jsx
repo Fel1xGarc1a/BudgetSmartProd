@@ -11,27 +11,27 @@ export default function Home() {
     const featureList = [
         {
             "name": "Personal/Group Budget Planner",
-            "description": "Create personalized budgets or collaborate seamlessly with groups. Perfect for everything from daily expenses to planning dream vacations with friends."
+            "description": "We offer both group and personal budget plan functionalities. This flexibility allows for users to create plans with the friends for trips or even just solo plans to budget properly"
         },
         {
             "name": "User Dashboard",
-            "description": "Experience your financial journey through intuitive visualizations. Our dynamic dashboard provides real-time insights into your spending patterns and savings progress."
+            "description": "Our user dashboard feature allows for our users to easily access different parts our application while offering user data visualizations to make our application emersive"
         },
         {
-            "name": "Budget Calendar",
-            "description": "Stay on track with our interactive timeline tool. Easily manage payment schedules, set financial milestones, and visualize your budget across different time periods."
+            "name": "Budget Calender",
+            "description": "Users can easily set end and start dates to the various plans they created and visualize these expected timelines using our budgeting calender feature"
         },
         {
-            "name": "Financial Knowledge Hub",
-            "description": "Access our curated collection of financial articles and resources. Stay informed with the latest budgeting strategies and money management tips."
+            "name": "Website Articles",
+            "description": "We also offer articles regarding budgeting and finance for our users to read while using our application."
         },
         {
-            "name": "Smart Friend System",
-            "description": "Connect with friends and family to create shared budgets. Our platform makes it simple to coordinate expenses and track group contributions in real-time."
+            "name": "Friend Adder",
+            "description": "Users can add their friends and family and creating plans involving whoever they desire."
         },
         {
-            "name": "Motivational Leaderboard",
-            "description": "Turn saving into a friendly competition. Compare your progress with friends, earn achievements, and stay motivated on your financial journey."
+            "name": "Leaderboard",
+            "description": "A small added twist to our website, you can comepete with added friends and family memebers to see who is the most financially responsible!"
         }
     ]
 

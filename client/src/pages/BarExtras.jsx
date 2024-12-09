@@ -5,19 +5,35 @@ export function FAQ() {
     const toggleContent = [
         { question: "How much does it cost?", answer: "Our services are completely free and we plan to keep it that way so there's no excuse to budget the right way" },
         { question: "How many budget plans can I create?", answer: "Our application allows you to create an unlimited amount of budget plans for free. So don't worry just budget away." },
-        { question: "How do I start?", answer: "The process is simple, go to our home page, click get started, and provide with valid information to create your new account" }
+        { question: "How do I start?", answer: "The process is simple, go to our home page, click get started, and provide valid information to create your new account" },
+        { question: "Can I share my budget plans with others?", answer: "Yes! Our group budgeting feature allows you to create and share budget plans with friends and family. Perfect for planning trips, events, or shared expenses." },
+        { question: "Is my financial information secure?", answer: "We take security seriously. All your financial data is encrypted and stored securely. We never share your personal information with third parties." },
+        { question: "What makes BudgetSmart different from other budgeting apps?", answer: "BudgetSmart combines personal budgeting with social features, making it unique. Our platform includes group planning, a motivational leaderboard, and educational resources all in one place." },
+        { question: "Can I access BudgetSmart on mobile devices?", answer: "Yes! Our website is fully responsive and works seamlessly on all devices - desktop, tablet, and mobile phones." }
     ];
 
     return (
         <>
-            <div className="h-screen w-screen flex flex-col justify-center font-Outfit">
-                <div className="flex justify-center p-5 mb-5 mt-20 bg-blue-200"><span className="font-bold text-5xl"><h1>Frequently Asked Questions (FAQs)</h1></span></div>
-                <span className="text-center text-2xl"><h1>You Have Questions? Hopefully We Were Able To Answer Some Below: </h1></span>
+            <div className="min-h-screen bg-gray-50 pt-20 pb-12 font-Outfit">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h1 className="text-5xl font-bold mb-4 text-gray-800">
+                            Frequently Asked <span className="text-orange-500">Questions</span>
+                        </h1>
+                        <p className="text-xl text-gray-600">
+                            Have questions? We're here to help!
+                        </p>
+                    </div>
 
-                <div className="flex flex-col items-center h-3/4 mt-10">
-                    {toggleContent.map((element) => {
-                        return (<ToggleBox question={element.question} content={element.answer} />);
-                    })}
+                    <div className="space-y-4">
+                        {toggleContent.map((element, index) => (
+                            <ToggleBox 
+                                key={index}
+                                question={element.question} 
+                                content={element.answer}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
